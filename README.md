@@ -1,0 +1,2 @@
+# typescriptPractice
+For my studies
