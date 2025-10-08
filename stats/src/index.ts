@@ -1,12 +1,15 @@
 import { CsvFileReader } from "./CsvFileReader";
+import { MatchReader } from "./MatchReader";
+import { ConsoleReports } from "./reportTargets/ConsoleReport";
+import { WinsAnalysis } from "./analyzers/WinsAlanysis";
+import { Summary } from "./Summary";
+import { HtmlReports } from "./reportTargets/HtmlReports";
 
-const csvFileReader = new CsvFileReader('football.csv');
-const matches = csvFileReader.read();
+const csvFileReader = new CsvFileReader('football.csv')
 
-enum MatchResult {
-  HomeWin = 'H',
-  AwayWin = 'A',
-  Draw = 'D'
-}
+const matchReader = new MatchReader(csvFileReader)
+matchReader.load()
 
-console.log(matches)
+const summary = new Summary(new WinsAnalysis('Man United'), new HtmlReports() )
+
+summary.buildAndPrintReport(matchReader.matches)
