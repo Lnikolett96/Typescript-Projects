@@ -100,18 +100,83 @@ linkedList.print();
    ```
 
 ---
+# 3. Stats | 🏆 Football Stats Analyzer
+
+A simple TypeScript project that demonstrates **real composition** and **object-oriented design patterns** in action.  
+It reads football match data from a CSV file, analyzes it, and generates reports — either in the console or as an HTML file.
+
+This project was created to illustrate how **composition** (not inheritance) can be used effectively in TypeScript,  
+a concept often misunderstood in the JavaScript community.
+
+---
+
+## ⚙️ Features
+
+- 📂 Reads match data from `football.csv`
+- 📊 Calculates the number of wins for a selected team
+- 🧩 Demonstrates composition and interface-based architecture
+- 🖥️ Generates reports to the **console** or to an **HTML file**
+- ⚡ Uses `concurrently` and `nodemon` for a smooth development workflow
 
 ## ⚙️ Requirements
 - [Node.js](https://nodejs.org/) installed  
 - TypeScript installed globally or locally (`npm install -g typescript`)  
 
+## 🧠 Project Structure
+src/
+├── analyzers/
+│ └── WinsAnalysis.ts
+├── reportTargets/
+│ ├── ConsoleReport.ts
+│ └── HtmlReports.ts
+├── utils.ts 
+├── CsvFileReader.ts
+├── MatchReader.ts
+├── MatchData.ts
+├── MatchResult.ts
+├── Summary.ts
+└── index.ts
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone and install dependencies
+
+```bash
+git clone https://github.com/Lnikolett96/stats.git
+cd stats
+npm install
 ---
+```
+### Run The App
+``` npm start ```
+###🧭 Key Learning Points
+
+Understanding and applying composition over inheritance
+
+Working with generics and interfaces in TypeScript
+
+Reading and parsing CSV data
+
+Building flexible reporting systems
+
+### 🧱 Technologies Used
+
+TypeScript
+
+Node.js
+
+Nodemon
+
+Concurrently
+
+
+
 
 ## 🚀 Getting Started
 Clone the repository and navigate into any project folder you want to try:
 
 ```bash
-git clone https://github.com/yourusername/typescript-projects.git
+git clone https://github.com/Lnikolett96/typescript-projects.git
 cd typescript-projects
 ```
 
