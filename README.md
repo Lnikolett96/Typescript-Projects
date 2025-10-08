@@ -1,17 +1,18 @@
-# Typescript Projects
+# 🧩 TypeScript Projects
 
 This repository contains a collection of small **TypeScript pet projects** that I built while practicing and learning TypeScript.  
-Each project is located in its own folder, and can be run independently.
+Each project is located in its own folder and can be run independently.
 
 ---
 
 ## 📌 Projects
 
 ### 1. Google Maps App
-A simple application that integrates **Google Maps**.  
-It displays a randomly generated **User** and **Company** on the world map using the [`faker`](https://github.com/faker-js/faker) library.  
 
-Main classes:
+A simple application that integrates **Google Maps**.  
+It displays a randomly generated **User** and **Company** on the world map using the [`faker`](https://github.com/faker-js/faker) library.
+
+**Main classes:**
 - `User`  
 - `Company`  
 - `CustomMap`
@@ -40,21 +41,22 @@ map.addMarker(company);
    ```bash
    npm install
    ```
-3. Start the project (depending on your setup, for example with parcel or webpack):
+3. Start the project (depending on your setup, for example with Parcel or Webpack):
    ```bash
    npm start
    ```
-4. Open the browser to see the map with the user and company markers.
+4. Open your browser to see the map with the user and company markers.
 
 ---
 
 ### 2. Sort
+
 This project demonstrates how to build a flexible **sorting algorithm** that works with different data types:  
 - Strings (`CharactersCollection`)  
 - Numbers (`NumberCollection`)  
 - Linked Lists (`LinkedList`)  
 
-The idea is to have a reusable `Sorter` class that can sort any collection which implements a common interface.
+The idea is to create a reusable `Sorter` class that can sort any collection implementing a shared interface.
 
 **Example code:**
 ```ts
@@ -100,12 +102,13 @@ linkedList.print();
    ```
 
 ---
-# 3. Stats | 🏆 Football Stats Analyzer
+
+### 3. Stats | 🏆 Football Stats Analyzer
 
 A simple TypeScript project that demonstrates **real composition** and **object-oriented design patterns** in action.  
 It reads football match data from a CSV file, analyzes it, and generates reports — either in the console or as an HTML file.
 
-This project was created to illustrate how **composition** (not inheritance) can be used effectively in TypeScript,  
+This project was created to illustrate how **composition** (not inheritance) can be used effectively in TypeScript —  
 a concept often misunderstood in the JavaScript community.
 
 ---
@@ -118,17 +121,24 @@ a concept often misunderstood in the JavaScript community.
 - 🖥️ Generates reports to the **console** or to an **HTML file**
 - ⚡ Uses `concurrently` and `nodemon` for a smooth development workflow
 
-## ⚙️ Requirements
+---
+
+## ⚡ Requirements
+
 - [Node.js](https://nodejs.org/) installed  
 - TypeScript installed globally or locally (`npm install -g typescript`)  
 
+---
+
 ## 🧠 Project Structure
+
+```
 src/
 ├── analyzers/
-│ └── WinsAnalysis.ts
+│   └── WinsAnalysis.ts
 ├── reportTargets/
-│ ├── ConsoleReport.ts
-│ └── HtmlReports.ts
+│   ├── ConsoleReport.ts
+│   └── HtmlReports.ts
 ├── utils.ts 
 ├── CsvFileReader.ts
 ├── MatchReader.ts
@@ -136,6 +146,9 @@ src/
 ├── MatchResult.ts
 ├── Summary.ts
 └── index.ts
+```
+
+---
 
 ## 🚀 Getting Started
 
@@ -145,34 +158,36 @@ src/
 git clone https://github.com/Lnikolett96/stats.git
 cd stats
 npm install
----
 ```
-### Run The App
-``` npm start ```
-###🧭 Key Learning Points
 
-Understanding and applying composition over inheritance
+### 2️⃣ Run the App
 
-Working with generics and interfaces in TypeScript
+```bash
+npm start
+```
 
-Reading and parsing CSV data
+---
 
-Building flexible reporting systems
+## 🧭 Key Learning Points
 
-### 🧱 Technologies Used
+- Understanding and applying **composition over inheritance**
+- Working with **generics** and **interfaces** in TypeScript
+- Reading and parsing **CSV data**
+- Building flexible reporting systems
 
-TypeScript
+---
 
-Node.js
+## 🧱 Technologies Used
 
-Nodemon
+- TypeScript
+- Node.js
+- Nodemon
+- Concurrently
 
-Concurrently
+---
 
+## 🚀 Getting Started (Repository)
 
-
-
-## 🚀 Getting Started
 Clone the repository and navigate into any project folder you want to try:
 
 ```bash
@@ -185,6 +200,7 @@ Then follow the instructions in each project section above.
 ---
 
 ## 📖 Notes
+
 These projects are made **for learning purposes** only.  
 They cover TypeScript fundamentals such as:
 - Classes and interfaces
