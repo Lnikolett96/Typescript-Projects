@@ -150,6 +150,15 @@ src/
 
 ---
 
+## 🧱 Technologies Used
+
+- TypeScript
+- Node.js
+- Nodemon
+- Concurrently
+
+---
+
 # 🧱 Web Framework - Web folder
 
 This project is part of the **[TypeScript: The Complete Developer’s Guide](https://www.udemy.com/course/typescript-the-complete-developers-guide/)** by Stephen Grider.  
@@ -198,22 +207,6 @@ You can clone and run the project locally in just a few steps:
 ### 3. run `npm start`
 
 
-## 🚀 Getting Started
-
-### 1️⃣ Clone and install dependencies
-
-```bash
-git clone https://github.com/Lnikolett96/stats.git
-cd stats
-npm install
-```
-
-### 2️⃣ Run the App
-
-```bash
-npm start
-```
-
 ---
 
 ## 🧭 Key Learning Points
@@ -225,16 +218,8 @@ npm start
 
 ---
 
-## 🧱 Technologies Used
 
-- TypeScript
-- Node.js
-- Nodemon
-- Concurrently
-
----
-
-## 🚀 Getting Started (Repository)
+# 🚀 Getting Started (Repository)
 
 Clone the repository and navigate into any project folder you want to try:
 
