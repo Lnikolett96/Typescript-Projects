@@ -217,6 +217,41 @@ You can clone and run the project locally in just a few steps:
 - Building flexible reporting systems
 
 ---
+4. Server | TypeScript with Next.js
+
+A small backend-oriented project built on Next.js with custom TypeScript decorators.
+The concept was inspired by the ts-express-decorators package, and the goal was to deepen my understanding of decorator patterns, metadata handling, and structured backend architecture.
+
+⚙️ Features
+
+Next.js server environment with custom routing logic
+
+Custom-built TypeScript decorators (use, post, controller, bodyValidator)
+
+Metadata handling using the reflect-metadata package
+
+Clear separation of concerns between controllers, middleware, and handlers
+
+⚡ Requirements
+
+Node.js
+
+TypeScript (installed globally or locally)
+
+npm or yarn package manager
+
+🧱 Technologies Used
+
+TypeScript
+
+Next.js
+
+Reflect Metadata
+
+JavaScript
+
+Parcel (for bundling where necessary)
+
 
 
 # 🚀 Getting Started (Repository)
